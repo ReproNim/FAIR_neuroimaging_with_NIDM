@@ -1,0 +1,5 @@
+-all
+-s
+sub-009
+-i
+/data/sub-009/anat/sub-009_T1w.nii.gz

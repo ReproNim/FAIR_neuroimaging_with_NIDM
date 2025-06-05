@@ -1,0 +1,74 @@
+Log file for defect2seg
+Fri May 30 16:54:12 UTC 2025
+
+setenv SUBJECTS_DIR /home/freesurfer/subjects
+cd /home/freesurfer/subjects/sub-008/scripts
+/usr/local/freesurfer/bin/defect2seg --s sub-008 --cortex
+
+freesurfer-linux-centos8_x86_64-7.4.1-20230613-7eb8460
+defect2seg 7.4.1
+Linux 4be2c66f1929 6.11.0-26-generic #26~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr 17 19:20:47 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+pid 1283
+mri_label2label --label-cortex /home/freesurfer/subjects/sub-008/surf/lh.orig.nofix /home/freesurfer/subjects/sub-008/mri/aseg.presurf.mgz 0 /home/freesurfer/subjects/sub-008/label/lh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+11 non-cortical segments detected
+only using segment with 7335 vertices
+erasing segment 1 (vno[0] = 111458)
+erasing segment 2 (vno[0] = 112403)
+erasing segment 3 (vno[0] = 112413)
+erasing segment 4 (vno[0] = 113300)
+erasing segment 5 (vno[0] = 113328)
+erasing segment 6 (vno[0] = 113362)
+erasing segment 7 (vno[0] = 115230)
+erasing segment 8 (vno[0] = 116394)
+erasing segment 9 (vno[0] = 116510)
+erasing segment 10 (vno[0] = 117493)
+mri_label2vol --defects /home/freesurfer/subjects/sub-008/surf/lh.orig.nofix /home/freesurfer/subjects/sub-008/surf/lh.defect_labels /home/freesurfer/subjects/sub-008/mri/orig.mgz 1000 0 /home/freesurfer/subjects/sub-008/mri/surface.defects.mgz /home/freesurfer/subjects/sub-008/label/lh.nofix.cortex.label
+mri_label2vol supposed to be reproducible but seed not set
+Contraining to label /home/freesurfer/subjects/sub-008/label/lh.nofix.cortex.label
+Changing input type 0 to MRI_INT
+Converting defects to volume: offset=1000, merge=0
+Writing to /home/freesurfer/subjects/sub-008/mri/surface.defects.mgz
+mris_defects_pointset -s /home/freesurfer/subjects/sub-008/surf/lh.orig.nofix -d /home/freesurfer/subjects/sub-008/surf/lh.defect_labels -o /home/freesurfer/subjects/sub-008/surf/lh.defects.pointset --label /home/freesurfer/subjects/sub-008/label/lh.nofix.cortex.label
+Reading in surface /home/freesurfer/subjects/sub-008/surf/lh.orig.nofix
+Reading in defect segmentation /home/freesurfer/subjects/sub-008/surf/lh.defect_labels
+Reading in label /home/freesurfer/subjects/sub-008/label/lh.nofix.cortex.label
+#VMPC# mris_defects_pointset 219524
+mris_defects_pointset done
+mri_label2label --label-cortex /home/freesurfer/subjects/sub-008/surf/rh.orig.nofix /home/freesurfer/subjects/sub-008/mri/aseg.presurf.mgz 0 /home/freesurfer/subjects/sub-008/label/rh.nofix.cortex.label
+
+ Generating cortex label... RemoveHipAmgy=0
+ NucAccIsMedialWall=0
+ mris->useRealRAS=0
+9 non-cortical segments detected
+only using segment with 7779 vertices
+erasing segment 1 (vno[0] = 100647)
+erasing segment 2 (vno[0] = 110423)
+erasing segment 3 (vno[0] = 111596)
+erasing segment 4 (vno[0] = 112707)
+erasing segment 5 (vno[0] = 114920)
+erasing segment 6 (vno[0] = 116873)
+erasing segment 7 (vno[0] = 117856)
+erasing segment 8 (vno[0] = 118717)
+mri_label2vol --defects /home/freesurfer/subjects/sub-008/surf/rh.orig.nofix /home/freesurfer/subjects/sub-008/surf/rh.defect_labels /home/freesurfer/subjects/sub-008/mri/surface.defects.mgz 2000 1 /home/freesurfer/subjects/sub-008/mri/surface.defects.mgz /home/freesurfer/subjects/sub-008/label/rh.nofix.cortex.label
+mri_label2vol supposed to be reproducible but seed not set
+Contraining to label /home/freesurfer/subjects/sub-008/label/rh.nofix.cortex.label
+Converting defects to volume: offset=2000, merge=1
+Writing to /home/freesurfer/subjects/sub-008/mri/surface.defects.mgz
+mris_defects_pointset -s /home/freesurfer/subjects/sub-008/surf/rh.orig.nofix -d /home/freesurfer/subjects/sub-008/surf/rh.defect_labels -o /home/freesurfer/subjects/sub-008/surf/rh.defects.pointset --label /home/freesurfer/subjects/sub-008/label/rh.nofix.cortex.label
+Reading in surface /home/freesurfer/subjects/sub-008/surf/rh.orig.nofix
+Reading in defect segmentation /home/freesurfer/subjects/sub-008/surf/rh.defect_labels
+Reading in label /home/freesurfer/subjects/sub-008/label/rh.nofix.cortex.label
+#VMPC# mris_defects_pointset 217664
+mris_defects_pointset done
+ 
+Started at Fri May 30 16:54:12 UTC 2025 
+Ended   at Fri May 30 16:55:08 UTC 2025
+Defect2seg-Run-Time-Sec 56
+Defect2seg-Run-Time-Min 1.12
+Defect2seg-Run-Time-Hours 0.02
+ 
+defect2seg Done
