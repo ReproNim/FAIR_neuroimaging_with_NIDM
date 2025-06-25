@@ -1,30 +1,10 @@
-# Cerebrovascular Reactivity Normative Dataset
+# FAIR neuroimaging with the Neuroimaging Data Model and PyNIDM README
 
 ## Description
 
-Fifty healthy adult subjects with no prior history of neurological or psychiatric disorder were included in this dataset.
+To investigate the relationship between brain size and age we queried OpenNeuro for a dataset with a wide range of ages and a T1-weighted MRI scan. We identified OpenNeuro dataset ds004604 version 2.0.0 (doi:10.18112/openneuro.ds004604.v2.0.0) which was downloaded in May 2025 (Rovai et al., 2024a). The dataset comprises 50 healthy adult subjects with no prior history of neurological or psychiatric disorder and an age range of 21-67yo (Rovai et al., 2024b). The original research sought to develop a normative dataset for the computation of Cerebrovascular Reactivity Maps. For brevity we stripped the dataset of T2-weighted and fMRI data (i.e. only T1-weighted data).
 
-The goal is to provide a normative dataset for the computation of maps of Cerebrovascular Reactivity Maps. For this purpose, we developed CVRmap, a BIDS-compatible pipeline to process the data. More information on CVRmap can be found on the corresponding github page:
+## References
+Rovai, A., Lolli, V., Trotta, N., Goldman, S., De Tiège, X., 2024a. Cerebrovascular Reactivity Normative Dataset. https://doi.org/10.18112/OPENNEURO.DS004604.V2.0.0
 
-`www.github.com/ln2t/cvrmap`.
-
-The paper describing CVRmap and this dataset can be found [here](https://rdcu.be/dCCZW).
-
-## Rawdata
-
-- Anatomical data: a standard T1w image was acquired for each subject.
-- Functional data: each subject underwent an fMRI scan with blocs of CO2 inhalation challenges.
-- Physiological data: breath CO2 was recorded using a capnograph during the fMRI acquisition.
-
-## Derivatives
-
-- `derivatives/fmriprep_v21.0.4`: output of fMRIPrep with the `--use-aroma` option enabled.
-- `derivatives/cvrmap_2.0.20`: output of CVRmap (`www.github.com/ln2t/cvrmap`), version 2.0.20.
-- `derivatives/cvrmap_2.0.25`: output of CVRmap (`www.github.com/ln2t/cvrmap`), version 2.0.25.
-- `derivatives/cvrmap_2.0.25_gs`: output of CVRmap (`www.github.com/ln2t/cvrmap`), version 2.0.25, with the global signal option.
-- `derivatives/cvrmap_2.0.25_vs`: output of CVRmap (`www.github.com/ln2t/cvrmap`), version 2.0.25, with the vessel signal option.
-
-## Further analysis
-
-Further analysis can be done using the jupyter notebook in the repository `www.github.com/ln2t/cvrmap-paper`. This will produce a set of figures and perform some basic statistics on the CVR maps (age regression, grey/white matter averages, etc).
-
+Rovai, A., Lolli, V., Trotta, N., Goldman, S., De Tiège, X., 2024b. CVRmap—a complete cerebrovascular reactivity mapping post-processing BIDS toolbox. Sci. Rep. 14, 7252. https://doi.org/10.1038/s41598-024-57572-3
