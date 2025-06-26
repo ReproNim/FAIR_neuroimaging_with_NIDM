@@ -1,0 +1,10 @@
+# FAIR neuroimaging with the Neuroimaging Data Model and PyNIDM README
+
+## Description
+
+To investigate the relationship between brain size and age we queried OpenNeuro for a dataset with a wide range of ages and a T1-weighted MRI scan. We identified OpenNeuro dataset ds004604 version 2.0.0 (doi:10.18112/openneuro.ds004604.v2.0.0) which was downloaded in May 2025 (Rovai et al., 2024a). The dataset comprises 50 healthy adult subjects with no prior history of neurological or psychiatric disorder and an age range of 21-67yo (Rovai et al., 2024b). The original research sought to develop a normative dataset for the computation of Cerebrovascular Reactivity Maps. For brevity we stripped the dataset of T2-weighted and fMRI data (i.e. only T1-weighted data).
+
+## References
+Rovai, A., Lolli, V., Trotta, N., Goldman, S., De Tiège, X., 2024a. Cerebrovascular Reactivity Normative Dataset. https://doi.org/10.18112/OPENNEURO.DS004604.V2.0.0
+
+Rovai, A., Lolli, V., Trotta, N., Goldman, S., De Tiège, X., 2024b. CVRmap—a complete cerebrovascular reactivity mapping post-processing BIDS toolbox. Sci. Rep. 14, 7252. https://doi.org/10.1038/s41598-024-57572-3
