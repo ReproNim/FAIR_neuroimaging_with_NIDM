@@ -1,0 +1,13 @@
+------------------------------
+SUBJECT sub-004
+START_TIME Thu May 29 12:50:58 UTC 2025
+END_TIME Thu May 29 18:53:54 UTC 2025
+RUNTIME_HOURS 6.049
+USER root
+HOST 
+PROCESSOR x86_64
+OS Linux
+UNAME Linux 7df6e1946399 6.11.0-26-generic #26~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr 17 19:20:47 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+VERSION 7.4.1 (freesurfer-linux-centos8_x86_64-7.4.1-20230613-7eb8460)
+CMDPATH /usr/local/freesurfer/bin/recon-all
+CMDARGS -all -s sub-004 -i /data/sub-004/anat/sub-004_T1w.nii.gz

@@ -1,0 +1,9 @@
+Logfile for pctsurfcon
+Thu May 29 12:23:26 UTC 2025
+setenv SUBJECTS_DIR /home/freesurfer/subjects
+cd /home/freesurfer/subjects/sub-003/scripts
+/usr/local/freesurfer/bin/pctsurfcon
+pctsurfcon 7.4.1
+Linux 5e607f82e4ec 6.11.0-26-generic #26~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr 17 19:20:47 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+FREESURFER_HOME /usr/local/freesurfer
+Cleaning up

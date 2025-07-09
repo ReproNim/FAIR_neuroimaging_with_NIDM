@@ -1,0 +1,24 @@
+/home/freesurfer/subjects/sub-011/mri
+/usr/local/freesurfer/bin/mri_nu_correct.mni
+--no-rescale --i orig.mgz --o orig_nu.mgz --ants-n4 --n 1 --proto-iters 1000 --distance 50
+nIters 1
+mri_nu_correct.mni 7.4.1
+Linux f2cfbac655d7 6.11.0-26-generic #26~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr 17 19:20:47 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+Wed May 28 16:12:40 UTC 2025
+tmpdir is ./tmp.mri_nu_correct.mni.325
+cd /home/freesurfer/subjects/sub-011/mri
+AntsN4BiasFieldCorrectionFs -i orig.mgz -o ./tmp.mri_nu_correct.mni.325/nu0.mgz --dtype uchar
+AntsN4BiasFieldCorrectionFs done
+mri_convert ./tmp.mri_nu_correct.mni.325/nu0.mgz orig_nu.mgz --like orig.mgz --conform
+mri_convert ./tmp.mri_nu_correct.mni.325/nu0.mgz orig_nu.mgz --like orig.mgz --conform 
+reading from ./tmp.mri_nu_correct.mni.325/nu0.mgz...
+TR=8.24, TE=0.00, TI=0.00, flip angle=0.00
+i_ras = (-1, 2.2992e-09, -9.31323e-10)
+j_ras = (9.31323e-10, 0, -1)
+k_ras = (1.39698e-09, 1, 0)
+INFO: transform src into the like-volume: orig.mgz
+writing to orig_nu.mgz...
+ 
+ 
+Wed May 28 16:15:46 UTC 2025
+mri_nu_correct.mni done

@@ -1,44 +1,24 @@
-    {
-      "group": {
-          "LongName": "Group",
-          "Levels": {
-            "control": "Group of healthy subjects",
-            "patient": "Group of unhealthy subjects"
-          }
-      },
-        "edinburgh": {
-            "LongName": "Edinburgh handedness test"
-        },
-        "edinburgh_alt": {
-            "LongName": "Alternative Edinburgh handedness test (more accurate counting)"
-        },
-        "last_name": {
-            "LongName": "Participant's last name"
-        },
-        "first_name": {
-            "LongName": "Participant's first name"
-        },
-        "sex": {
-            "LongName": "Sex"
-        },
-        "age": {
-            "LongName": "Age"
-        },
-        "smoking_status": {
-          "LongName": "Smoking Status",
-          "Description": "Indicate the smoking status of the subject",
-          "Levels": {
-            "n": "Subject has never smoked",
-            "y": "Subject is currently a smoker",
-            "(number)": "Subject has stopped smoking (number) years ago"
-          }
-        },
-        "smoking_rate": {
-          "LongName": "Smoking Rate",
-          "Description": "Number of cigarettes smoked per day"
-        },
-        "smoking_time": {
-          "LongName": "Smoking Time",
-          "Description": "Number of years of active smoking"
-        }
+{
+    "sex": {
+        "label": "sex",
+        "description": "",
+        "source_variable": "sex",
+        "isAbout": [
+            {
+                "@id": "http://uri.interlex.org/base/ilx_0101292",
+                "label": "Biological sex"
+            }
+        ]
+    },
+    "age": {
+        "label": "age",
+        "description": "",
+        "source_variable": "age",
+        "isAbout": [
+            {
+                "@id": "http://uri.interlex.org/ilx_0100400",
+                "label": "Age"
+            }
+        ]
     }
+}
