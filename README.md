@@ -1,5 +1,5 @@
 # FAIR neuroimaging with the Neuroimaging Data Model and PyNIDM
-[![DOI](https://zenodo.org/badge/15850461.svg)](https://zenodo.org/badge/latestdoi/15850461)
+[![DOI](https://zenodo.org/badge/1016908671.svg)](https://doi.org/10.5281/zenodo.15850460)
 
 ## Description
 
