@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for sub in sub-001 sub-002 sub-003 sub-004 sub-005 sub-006 sub-007 sub-008 sub-009 sub-010;do
+for sub in sub-031 sub-032 sub-033 sub-034 sub-035 sub-036 sub-037 sub-038 sub-039 sub-040;do
     printf "************* Processing ${sub} *************\n"
     docker run -it --rm \
     -v /media/sehatton/ds004604/license/license.txt:/usr/local/freesurfer/.license \
@@ -8,6 +8,7 @@ for sub in sub-001 sub-002 sub-003 sub-004 sub-005 sub-006 sub-007 sub-008 sub-0
     -v /media/sehatton/ds004604/derivatives/freesurfer:/home/freesurfer/subjects \
     -e SUBJECTS_DIR='/home/freesurfer/subjects' \
     -e FS_ALLOW_DEEP=1 \
+    -v /media/sehatton/ds004604/:/home/bids \
     vnmd/freesurfer_8.0.0 \
-    recon-all -s ${sub} -i SUBJECTS_DIR/${sub}_T1w.nii.gz
+    recon-all -s ${sub} -i /home/bids/${sub}/anat/${sub}_T1w.nii.gz
 done
