@@ -97649,11 +97649,11 @@ niiri:a4ee6816-5cea-11f0-b5b9-8cec4bb4ad6d a prov:Activity ;
     dct:description "Freesurfer segmentation statistics" ;
     dct:isPartOf niiri:a4ee8ada-5cea-11f0-b5b9-8cec4bb4ad6d ;
     prov:qualifiedAssociation [ a prov:Association ;
-            prov:agent niiri:a4ee7f36-5cea-11f0-b5b9-8cec4bb4ad6d ;
-            prov:hadRole nidm:NIDM_0000164 ],
-        [ a prov:Association ;
             prov:agent niiri:a4ee8418-5cea-11f0-b5b9-8cec4bb4ad6d ;
-            prov:hadRole sio:Subject ] ;
+            prov:hadRole sio:Subject ],
+        [ a prov:Association ;
+            prov:agent niiri:a4ee7f36-5cea-11f0-b5b9-8cec4bb4ad6d ;
+            prov:hadRole nidm:NIDM_0000164 ] ;
     fs:BrainVolStatsFixed-NotNeeded "because voxelvolume=1mm3" ;
     fs:ColorTable "/usr/local/freesurfer/ASegStatsLUT.txt" ;
     fs:ColorTableTimeStamp "2023/06/14 03:36:43" ;
@@ -100111,11 +100111,11 @@ niiri:be01655a-5ceb-11f0-94d5-8cec4bb4ad6d a prov:Activity ;
     dct:description "Freesurfer segmentation statistics" ;
     dct:isPartOf niiri:be01812a-5ceb-11f0-94d5-8cec4bb4ad6d ;
     prov:qualifiedAssociation [ a prov:Association ;
-            prov:agent niiri:be017a9a-5ceb-11f0-94d5-8cec4bb4ad6d ;
-            prov:hadRole sio:Subject ],
-        [ a prov:Association ;
             prov:agent niiri:be01761c-5ceb-11f0-94d5-8cec4bb4ad6d ;
-            prov:hadRole nidm:NIDM_0000164 ] ;
+            prov:hadRole nidm:NIDM_0000164 ],
+        [ a prov:Association ;
+            prov:agent niiri:be017a9a-5ceb-11f0-94d5-8cec4bb4ad6d ;
+            prov:hadRole sio:Subject ] ;
     fs:AnnotationFile "../label/rh.aparc.annot" ;
     fs:AnnotationFileTimeStamp "2025/06/04 18:16:27" ;
     fs:BrainVolStatsFixed-NotNeeded "because voxelvolume=1mm3" ;
