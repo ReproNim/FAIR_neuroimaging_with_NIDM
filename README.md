@@ -1,4 +1,4 @@
-# FAIR neuroimaging with NIDM
+# FAIR neuroimaging with the Neuroimaging Data Model and PyNIDM
 
 
 ## Description
