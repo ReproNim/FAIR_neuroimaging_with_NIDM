@@ -9,6 +9,6 @@ for sub in sub-041 sub-042 sub-043 sub-044 sub-045 sub-046 sub-047 sub-048 sub-0
     -e SUBJECTS_DIR='/home/freesurfer/subjects' \
     -e FS_ALLOW_DEEP=1 \
     -v /media/sehatton/ds004604/:/home/bids \
-    vnmd/freesurfer_8.0.0 \
+    freesurfer/freesurfer:7.4.1 \
     recon-all -s ${sub} -i /home/bids/${sub}/anat/${sub}_T1w.nii.gz
 done
