@@ -13,11 +13,10 @@ select distinct ?ID ?Sex ?Age ?brainvol_softwareLabel ?brainvol
 
 where {
     # tool initialization                  
-    ?tool_act a prov:Activity ;
-                prov:qualifiedAssociation [prov:agent [nidm:NIDM_0000164 ?tool]] .
+    ?tool_act a prov:Activity .
+                #prov:qualifiedAssociation [prov:agent [nidm:NIDM_0000164 ?tool]] .
     ?tool_act prov:qualifiedAssociation [prov:agent [ndar:src_subject_id ?ID]] .
-
-         
+   
     # Segmented Brain Volume   
     ?tool_entity prov:wasGeneratedBy ?tool_act ;
             ?measure_brainvol ?brainvol .      
